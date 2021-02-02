@@ -38,3 +38,14 @@ body {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
+
+    .profile__pic {
+          border-radius: 50%;
+            align-items: center;
+            margin: auto 0;
+       }
+
+    .sign__in {
+      text-align: center;
+
+    }
