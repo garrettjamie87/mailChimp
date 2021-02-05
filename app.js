@@ -56,6 +56,10 @@ app.post("/", function (req, res) {
   request.end();
 });
 
+app.post("/failure", function(req,res){
+  res.redirect("/")
+})
+
 app.listen(3000, function () {
   console.log("server is running");
 });
