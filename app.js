@@ -38,12 +38,19 @@ app.post("/", function (req, res) {
     method: "POST",
     auth: "Jamie:027610e85acb5dbc5b5aae7a777595c5-us7"
   };
-
+ 
   const request = https.request(url, options, function(response) {
+    
+    if (response.statusCode === 200) {
+      res.sendFile(__dirname + "/success.html")
+    } else {
+      res.sendFile(__dirname + "/failure.html")
+    }
+
     response.on("date", function (data) {
       console.log(JSON.parse(data));
     })
-  })
+  });
 
   request.write(jsonData);
   request.end();
