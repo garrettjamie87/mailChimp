@@ -1,3 +1,3 @@
 # mailChimp
 
-A simple signup page where users can sign up for a newsletter. Hosted by mailChimp.
+A simple sign up page where users can subscribe a newsletter. Hosted by mailChimp.
